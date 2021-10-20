@@ -9,7 +9,7 @@ body {
   font-style: normal;
 }
 .container {
-  max-width: 1140px;
+  min-width: 1600px;
   margin: 0 auto;
   width: 100%;
 }
@@ -19,6 +19,7 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  max-width: 1140px:
 }
 .page-header-btn-wrp {
   display: flex;
@@ -157,24 +158,26 @@ body {
 .bacground-banner {
   background-color: #f1e4e6;
   width: 100%;
+  display: flex;
+  justify-content: space-around;
 }
 .page-header-banner {
+  width: 1140px;
   min-height: 768px;
   background-image: url(../img/man.png);
   background-repeat: no-repeat;
   background-position: -150px;
   /* background-size: 50%; */
   display: flex;
-  justify-content: end;
+  justify-content:flex-end;
   align-items: center;
-  
   margin-bottom: 65px;
 }
 .page-header-banner-wrp {
   margin: 0 0 0 50px;
   text-transform: uppercase;
   position: relative;
-    margin-right: 70px;
+  margin-right: 70px;
 }
 .page-header-banner-wrp::before {
   content: "";
@@ -247,7 +250,171 @@ body {
   text-transform: uppercase;
   color: #f16d7f;
 }
-.feat-heading {
+/* products */
+
+.products {
+  width: 100%;
+  width: 1140px;
+  margin: 96px auto;
+  color: #222222;
+  background-color: #fff;
+}
+
+.products-title,
+.products-txt {
+  width: 100%;
+  margin: 0;
+  text-align: center;
+}
+
+.products-title {
+  margin: 0 0 6px 0;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 400;
+}
+
+.products-txt {
+  margin: 0 0 48px 0;
+  font-size: 14px;
+  line-height: 17px;
+  color: #9f9f9f;
+}
+
+.products-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 0 18px 0;
+  padding: 0;
+}
+
+.products-list li {
+  list-style-type: none;
+}
+
+.products-item {
+  width: 360px;
+  margin: 0 0 30px 0;
+  position: relative;
+  background: #f8f8f8;
+}
+
+.products-item:hover .products-item-btn {
+  display: flex;
+}
+
+.products-item:hover .products-item-btn:hover {
+  background-color: #ccc;
+  color: #000;
+  border: 1px solid #000;
+}
+
+.products-item:hover .products-item-btn:hover svg {
+  fill: #000;
+}
+
+.products-item:hover .products-item-btn:active {
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.products-item:hover .products-item-btn:active svg {
+  fill: #fff;
+}
+
+.products-item:hover .products-item-photo {
+  filter: brightness(50%);
+}
+
+.products-item-photo {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.products-item-txt-wrp {
+  padding: 25px 18px 20px 18px;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+.products-item-title {
+  display: block;
+  margin: 0 0 12px 0;
+  text-transform: uppercase;
+  font-size: 13px;
+  line-height: 16px;
+  color: #000000;
+}
+
+.products-item-txt {
+  margin: 0 0 18px 0;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #5d5d5d;
+}
+
+.products-item-price {
+  display: block;
+  margin: 0;
+  font-size: 16px;
+  line-height: 19px;
+  color: #f16d7f;
+}
+
+.products-item-btn {
+  display: none;
+
+  justify-content: center;
+  align-items: center;
+  width: 38.3%;
+  min-height: 43px;
+  border: 1px solid #ffffff;
+  background: transparent;
+  text-align: center;
+  font-size: 14px;
+  line-height: 17px;
+  color: #ffffff;
+  position: absolute;
+  top: 188px;
+  left: 32.7%;
+}
+
+.products-item-btn svg {
+  fill: #fff;
+  margin: 0 11px 0 0;
+}
+
+.products-btn {
+  display: block;
+  max-width: 212px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 15px;
+  color: #f26376;
+  box-sizing: border-box;
+  border: 1px solid #ff6a6a;
+  background-color: #fff;
+  line-height: 19px;
+  font-size: 16px;
+  text-align: center;
+  word-break: break-all;
+}
+
+.products-btn:hover {
+  background-color: #ff6a6a;
+  color: #fff;
+}
+
+.products-btn:active {
+  background-color: #fff;
+  color: #ff6a6a;
+}
+/* old products styles */
+/* .feat-heading {
   text-align: center;
   margin-top: 96px;
   margin-bottom: 48px;
@@ -285,7 +452,7 @@ body {
 .hover-cart {
   opacity: 0.8;
   position: absolute;
-  /* display: none; */
+  
 }
 .products-item-photo:hover .hover-cart {
   z-index: 1;
@@ -322,7 +489,7 @@ body {
 .browse-btn-link {
   text-decoration: none;
   color: #f26376;
-}
+} */
 .features {
   min-height: 341px;
   background-color: #222222;
